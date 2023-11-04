@@ -1,0 +1,119 @@
+/*MediaQuerys para responsive*/
+/*Laptop*/
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .titulo-redes h1 {
+        max-width: 80%;
+    }
+}
+
+/*Mobile L*/
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+    .imagen {
+        width: 160%;
+    }
+
+    .titulo-redes {
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    .instagram-titulo h2,
+    .facebook-titulo h2,
+    .youtube-titulo h2 {
+        font-size: 40px;
+    }
+
+    .footer-terms {
+        font-size: 15px;
+    }
+    
+    .copyright {
+        font-size: 15px;
+    }
+}
+
+/* Mobile M */
+@media only screen and (max-width: 375px) and (min-width: 321px) {
+
+    section section img {
+        width: 160%;
+    }
+
+    .titulo-redes h1 {
+        font-size: 50px;
+    }
+
+    .instagram-titulo h2,
+    .facebook-titulo h2,
+    .youtube-titulo h2 {
+        font-size: 30px;
+    }
+
+    .footer-terms {
+        font-size: 15px;
+    }
+    
+    .copyright {
+        font-size: 15px;
+    }
+}
+
+/* Mobile S */
+@media only screen and (max-width: 320px) {
+
+    section section img {
+        width: 160%;
+    }
+
+    .titulo-redes h1 {
+        font-size: 40px;
+    }
+
+    .instagram-titulo h2,
+    .facebook-titulo h2,
+    .youtube-titulo h2 {
+        font-size: 25px;
+    }
+    
+    .footer-terms {
+        font-size: 15px;
+    }
+    
+    .copyright {
+        font-size: 15px;
+    }
+}
+
+/*Modificando menú hamburguesa de Bootstrap*/
+@media only screen and (max-width: 990px) {
+    .pages {
+        padding: 10px 0px;
+        text-align: center;
+    &:not(:first-child) {
+        border-top: 2px grey solid;
+    }
+    }
+
+    .navegable {
+        justify-content: center;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+
+    .navbar-toggler {
+        margin-right: 10%;
+        color: transparent;
+        border: transparent;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url(../img/icono-menu-hambuguesa.png);
+    }
+
+    .navbar-collapse {
+        transition: .6s;
+        border: 1px grey solid;
+        border-radius: 10px;
+    }
+}

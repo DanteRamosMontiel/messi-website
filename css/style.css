@@ -1,641 +1,560 @@
-/* Importando la fuente */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+/* Reset de márgenes y rellenos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Reset de encabezados y párrafos */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
 
-/* Modificando el color del fondo de mi web */
+/* Reset de listas */
+ul, ol {
+  list-style: none;
+}
+
+/*Cambiando el color de fondo de la web y modificando el ScrollBar*/
 body {
-    background-color: #000;
+  background-color: #000;
 }
-
-/* Moficiando el scrollbar */
 body::-webkit-scrollbar {
-    width: 18px;
+  width: 18px;
 }
-
 body::-webkit-scrollbar-thumb {
-    background: #212121;
-    border-radius: 10px;
+  background: #212121;
+  border-radius: 10px;
 }
 
-/* Modificando el header */
+/*Modificando el Header*/
 .header {
-    width: 100%;
-    min-height: 65px;
-    background-color: #191919;
-    position: fixed;
-    top: 0;
-    padding: 15px;
-    z-index: 100;
+  width: 100%;
+  min-height: 65px;
+  background-color: #191919;
+  position: fixed;
+  top: 0;
+  padding: 15px;
+  z-index: 100;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    transition: .4s;
-    margin-left: 10%;
-    width: 68px;
-    height: 60px;
-    margin-right: 0px;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  margin-left: 10%;
+  width: 68px;
+  height: 60px;
 }
-
+.logo:hover {
+  scale: 0.9;
+}
 .logo img {
-    height: 60px;
+  height: 60px;
 }
 
 .navegable {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin-right: 10vw;
-    text-align: end;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 10vw;
+  text-align: end;
 }
 
 .pages {
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0px 15px;
-    color: gold;
-    text-decoration: none;
-    transition: .3s;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px 15px;
+  color: gold;
+  transition: 0.3s;
 }
-
 .pages:hover {
-    color: #635820;
-    scale: .9;
-    border-bottom: 1px #635820 solid;
+  color: #635820;
+  scale: 0.9;
 }
 
-.logo:hover {
-    scale: 1.1;
-}
-
-/* PESTAÑA HOME */
-
-/* Modificando la seccion ACERCA DE MESSI */
-.aboutmessi {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
-    margin-top: 200px;
-    border: 1px solid #ccc;
-}
-
-.aboutmessi .textabout {
-    width: 800px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #ccc;
-}
-
-.aboutmessi .textabout h2 {
-    font-family: 'Rubik', sans-serif;
-    color: gold;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.aboutmessi .textabout p {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.aboutmessi .imgabout {
-    width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-}
-
-.aboutmessi .imgabout img {
-    z-index: -1;
-}
-
-/* Modificando la seccion ESTADISTICAS */
-
-.stadisticsmessi {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
-    margin-top: 200px;
-    border: 1px solid #ccc;
-}
-
-.stadisticsmessi .textstadisticsmessi {
-    width: 800px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #ccc;
-}
-
-.stadisticsmessi .textstadisticsmessi h2 {
-    font-family: 'Rubik', sans-serif;
-    color: gold;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.stadisticsmessi .textstadisticsmessi p {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.stadisticsmessi .imgstadisticsmessi {
-    width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-}
-
-.stadisticsmessi .imgstadisticsmessi img {
-    z-index: -1;
-}
-
-
-/* Modificando la seccion EQUIPOS DONDE HA JUGADO */
-
-.teamshasbeen {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
-    margin-top: 200px;
-    border: 1px solid #ccc;
-}
-
-.teamshasbeen .texthasbeen {
-    width: 800px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #ccc;
-}
-
-.teamshasbeen .texthasbeen h2 {
-    font-family: 'Rubik', sans-serif;
-    color: gold;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.teamshasbeen .texthasbeen p {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.teamshasbeen .imghasbeen {
-    width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-}
-
-.teamshasbeen .imghasbeen img {
-    z-index: -1;
-}
-
-
-/* Modificando la seccion PALMARES */
-
-.palmares {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
-    margin-top: 200px;
-    border: 1px solid #ccc;
-}
-
-.palmares .textpalmares {
-    width: 800px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #ccc;
-}
-
-.palmares .textpalmares h2 {
-    font-family: 'Rubik', sans-serif;
-    color: gold;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.palmares .textpalmares p {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.palmares .imgpalmares {
-    width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-}
-
-.palmares .imgpalmares img {
-    z-index: -1;
-}
-
-/* Modificando el footer */
-
+/*Modificando el Footer*/
 .footer {
-    width: 100%;
-    min-height: 200px;
-    background-color: #191919;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 200px;
+  background-color: #191919;
+  padding: 50px;
 }
-
 .footer-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-    margin-top: 30px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-bottom: 20px;
+  margin-top: 30px;
 }
-
 .footer-social a {
-    transition: .3s;
-    color: grey;
-    margin: 0px 20px;
+  color: grey;
+  transition: 0.3s;
+  margin: 0px 20px;
 }
-
 .footer-social a:hover {
-    color: #fff;
-    scale: 1.2;
+  color: white;
+  scale: 1.2;
 }
-
 .footer-terms {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
-
 .footer-terms a {
-    color: grey;
-    text-decoration: none;
-    margin: 0px 20px;
-    transition: .3s;
-    text-align: center;
+  color: grey;
+  text-decoration: none;
+  margin: 0px 20px;
+  transition: 0.3s;
+  text-align: center;
 }
-
 .footer-terms a:hover {
-    color: #fff;
-    text-decoration: underline;
-    scale: 1.1;
+  color: white;
+  text-decoration: underline;
+  scale: 1.1;
 }
 
 .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 20px;
-    padding-top: 20px;
-    color: grey;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+}
+.copyright p {
+  padding-top: 20px;
 }
 
-/* PESTAÑA MERCHANDISING */
-
-.tituloTienda {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 140px;
-    margin-bottom: 100px;
+/*PESTAÑA HOME*/
+/* Modificando la seccion ACERCA DE MESSI */
+.aboutmessi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  overflow: hidden;
+  margin-top: 200px;
+  max-width: 1920px;
+  border: 1px solid white;
+}
+.aboutmessi .textabout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+  height: 100%;
+  border: 1px solid white;
+}
+.aboutmessi .textabout h2 {
+  font-family: "Rubik", sans-serif;
+  color: gold;
+  font-size: 50px;
+  text-align: center;
+}
+.aboutmessi .imgabout {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+.aboutmessi .imgabout img {
+  z-index: -1;
 }
 
-.tituloTienda h1 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 70px;
-    color: #fff;
-    font-weight: 900;
-    text-align: center;
+/* Modificando la seccion ESTADISTICAS */
+.stadisticsmessi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  overflow: hidden;
+  margin-top: 200px;
+  max-width: 1920px;
+  border: 1px solid white;
+}
+.stadisticsmessi .textstadisticsmessi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+  height: 100%;
+  border: 1px solid white;
+}
+.stadisticsmessi .textstadisticsmessi h2 {
+  font-family: "Rubik", sans-serif;
+  color: gold;
+  font-size: 50px;
+  text-align: center;
+}
+.stadisticsmessi .imgstadisticsmessi {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+.stadisticsmessi .imgstadisticsmessi img {
+  z-index: -1;
 }
 
-/* PESTAÑA SOCIAL MEDIA */
+/* Modificando la seccion EQUIPOS DONDE HA JUGADO */
+.teamshasbeen {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  overflow: hidden;
+  margin-top: 200px;
+  max-width: 1920px;
+  border: 1px solid white;
+}
+.teamshasbeen .texthasbeen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+  height: 100%;
+  border: 1px solid white;
+}
+.teamshasbeen .texthasbeen h2 {
+  font-family: "Rubik", sans-serif;
+  color: gold;
+  font-size: 50px;
+  text-align: center;
+}
+.teamshasbeen .imghasbeen {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+.teamshasbeen .imghasbeen img {
+  z-index: -1;
+}
 
-/* TITULO */
+/* Modificando la seccion PALMARES */
+.palmares {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  overflow: hidden;
+  margin-top: 200px;
+  max-width: 1920px;
+  border: 1px solid white;
+}
+.palmares .textpalmares {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+  height: 100%;
+  border: 1px solid white;
+}
+.palmares .textpalmares h2 {
+  font-family: "Rubik", sans-serif;
+  color: gold;
+  font-size: 50px;
+  text-align: center;
+}
+.palmares .imgpalmares {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+.palmares .imgpalmares img {
+  z-index: -1;
+}
+
+/*PESTAÑA MERCHANDISING*/
+/*Modificando el titulo*/
+.titulo-tienda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+.titulo-tienda h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+}
+
+/*PESTAÑA SOCIAL MEDIA*/
+/*Modificando el titulo*/
 .titulo-redes {
-    margin-top: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
 }
-
 .titulo-redes h1 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 70px;
-    color: #fff;
-    font-weight: 900;
-    text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
 }
 
-/* ACORDEONES EN GENERAL */
+/*Modificando acordeones en rasgos generales*/
 .acordeones {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0px;
 }
 
 .accordion {
-    width: 95%;
-    margin-bottom: 50px;
-
+  width: 95%;
+  margin-bottom: 50px;
 }
 
-/* INSTAGRAM ACCORDION */
+/*Modificando acordeon de Instagram*/
 .accordion-button-instagram {
-    display: flex;
-    justify-content: center;
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc2743', endColorstr='#bc1888', GradientType=1);
-    --bs-accordion-btn-focus-border-color: none;
-    --bs-accordion-btn-focus-box-shadow: none;
+  display: flex;
+  justify-content: center;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dc2743", endColorstr="#bc1888", GradientType=1);
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
 }
 
 .accordion-body-instagram {
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f09433", endColorstr="#bc1888", GradientType=1);
 }
-
 .accordion-body-instagram div {
-    width: 500px;
+  width: 500px;
 }
 
 .instagram-titulo h2 {
-    padding: 20px 10px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  padding: 20px 10px;
 }
 
 .instagram-media {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-/* FACEBOOK ACCORDION */
+/*Modificando acordeon de Facebook*/
 .accordion-button-facebook {
-    display: flex;
-    justify-content: center;
-    background: rgb(30, 30, 149);
-    background: -moz-linear-gradient(45deg, rgba(30, 30, 149, 1) 25%, rgba(59, 89, 152, 1) 65%, rgba(88, 116, 175, 1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(30, 30, 149, 1) 25%, rgba(59, 89, 152, 1) 65%, rgba(88, 116, 175, 1) 100%);
-    background: linear-gradient(45deg, rgba(30, 30, 149, 1) 25%, rgba(59, 89, 152, 1) 65%, rgba(88, 116, 175, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e95", endColorstr="#5874af", GradientType=1);
-    --bs-accordion-btn-focus-border-color: none;
-    --bs-accordion-btn-focus-box-shadow: none;
+  display: flex;
+  justify-content: center;
+  background: rgb(30, 30, 149);
+  background: -moz-linear-gradient(45deg, rgb(30, 30, 149) 25%, rgb(59, 89, 152) 65%, rgb(88, 116, 175) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(30, 30, 149) 25%, rgb(59, 89, 152) 65%, rgb(88, 116, 175) 100%);
+  background: linear-gradient(45deg, rgb(30, 30, 149) 25%, rgb(59, 89, 152) 65%, rgb(88, 116, 175) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e95", endColorstr="#5874af", GradientType=1);
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
 }
 
 .accordion-body-facebook {
-    background: rgb(30, 30, 149);
-    background: -moz-linear-gradient(45deg, rgba(30, 30, 149, 1) 25%, rgba(59, 89, 152, 1) 65%, rgba(88, 116, 175, 1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(30, 30, 149, 1) 25%, rgba(59, 89, 152, 1) 65%, rgba(88, 116, 175, 1) 100%);
-    background: linear-gradient(45deg, rgba(30, 30, 149, 1) 25%, rgba(59, 89, 152, 1) 65%, rgba(88, 116, 175, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e95", endColorstr="#5874af", GradientType=1);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgb(30, 30, 149);
+  background: -moz-linear-gradient(45deg, rgb(30, 30, 149) 25%, rgb(59, 89, 152) 65%, rgb(88, 116, 175) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(30, 30, 149) 25%, rgb(59, 89, 152) 65%, rgb(88, 116, 175) 100%);
+  background: linear-gradient(45deg, rgb(30, 30, 149) 25%, rgb(59, 89, 152) 65%, rgb(88, 116, 175) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e95", endColorstr="#5874af", GradientType=1);
 }
-
-.facebook-publicacion-1 iframe,
-.facebook-publicacion-2 iframe,
-.facebook-publicacion-3 iframe {
-    background-color: #FFFFFFFF;
-    margin: 5px 0px;
-    max-width: 100%;
-}
-
 .accordion-body-facebook div {
-    width: 500px;
+  width: 500px;
 }
 
 .facebook-titulo h2 {
-    padding: 20px 10px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  padding: 20px 10px;
 }
 
-/* YOUTUBE ACCORDION */
+.facebook-iframe {
+  background-color: white;
+  margin: 5px 0px;
+  max-width: 100%;
+}
+
+/*Modificando acordeon de Youtube*/
 .accordion-button-youtube {
-    display: flex;
-    justify-content: center;
-    background: rgb(108, 47, 45);
-    background: -moz-linear-gradient(45deg, rgba(108, 47, 45, 1) 17%, rgba(196, 48, 43, 1) 59%, rgba(203, 99, 95, 1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(108, 47, 45, 1) 17%, rgba(196, 48, 43, 1) 59%, rgba(203, 99, 95, 1) 100%);
-    background: linear-gradient(45deg, rgba(108, 47, 45, 1) 17%, rgba(196, 48, 43, 1) 59%, rgba(203, 99, 95, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c2f2d", endColorstr="#cb635f", GradientType=1);
-    --bs-accordion-btn-focus-border-color: none;
-    --bs-accordion-btn-focus-box-shadow: none;
+  display: flex;
+  justify-content: center;
+  background: rgb(108, 47, 45);
+  background: -moz-linear-gradient(45deg, rgb(108, 47, 45) 17%, rgb(196, 48, 43) 59%, rgb(203, 99, 95) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(108, 47, 45) 17%, rgb(196, 48, 43) 59%, rgb(203, 99, 95) 100%);
+  background: linear-gradient(45deg, rgb(108, 47, 45) 17%, rgb(196, 48, 43) 59%, rgb(203, 99, 95) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c2f2d", endColorstr="#cb635f", GradientType=1);
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
 }
 
 .accordion-body-youtube {
-    background: rgb(108, 47, 45);
-    background: -moz-linear-gradient(45deg, rgba(108, 47, 45, 1) 17%, rgba(196, 48, 43, 1) 59%, rgba(203, 99, 95, 1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(108, 47, 45, 1) 17%, rgba(196, 48, 43, 1) 59%, rgba(203, 99, 95, 1) 100%);
-    background: linear-gradient(45deg, rgba(108, 47, 45, 1) 17%, rgba(196, 48, 43, 1) 59%, rgba(203, 99, 95, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c2f2d", endColorstr="#cb635f", GradientType=1);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgb(108, 47, 45);
+  background: -moz-linear-gradient(45deg, rgb(108, 47, 45) 17%, rgb(196, 48, 43) 59%, rgb(203, 99, 95) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(108, 47, 45) 17%, rgb(196, 48, 43) 59%, rgb(203, 99, 95) 100%);
+  background: linear-gradient(45deg, rgb(108, 47, 45) 17%, rgb(196, 48, 43) 59%, rgb(203, 99, 95) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c2f2d", endColorstr="#cb635f", GradientType=1);
 }
-
-.video-1 iframe,
-.video-2 iframe,
-.video-3 iframe {
-    max-width: 100%;
-}
-
 .accordion-body-youtube div {
-    width: 500px;
+  width: 500px;
 }
 
 .youtube-titulo h2 {
-    padding: 20px 10px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  padding: 20px 10px;
 }
 
-/* Aplicando condiciones para responsive */
-/* Laptop */
+.youtube-iframe {
+  max-width: 100%;
+}
+
+/*MediaQuerys para responsive*/
+/*Laptop*/
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    .titulo-redes h1 {
-        max-width: 80%;
-    }
+  .titulo-redes h1 {
+    max-width: 80%;
+  }
 }
-
-/* Mobile L */
+/*Mobile L*/
 @media only screen and (max-width: 425px) and (min-width: 376px) {
-
-    section section img {
-        width: 160%;
-    }
-
-    .titulo-redes h1 {
-        font-size: 60px;
-    }
-
-    .instagram-titulo h2,
-    .facebook-titulo h2,
-    .youtube-titulo h2 {
-        font-size: 40px;
-    }
-    
-    .footer-terms {
-        font-size: 15px;
-    }
-    
-    .copyright {
-        font-size: 15px;
-    }
+  .imagen {
+    width: 160%;
+  }
+  .titulo-redes h1 {
+    font-size: 60px;
+  }
+  .instagram-titulo h2,
+  .facebook-titulo h2,
+  .youtube-titulo h2 {
+    font-size: 40px;
+  }
+  .footer-terms {
+    font-size: 15px;
+  }
+  .copyright {
+    font-size: 15px;
+  }
 }
-
 /* Mobile M */
 @media only screen and (max-width: 375px) and (min-width: 321px) {
-
-    section section img {
-        width: 160%;
-    }
-
-    .titulo-redes h1 {
-        font-size: 50px;
-    }
-
-    .instagram-titulo h2,
-    .facebook-titulo h2,
-    .youtube-titulo h2 {
-        font-size: 30px;
-    }
-
-    .footer-terms {
-        font-size: 15px;
-    }
-    
-    .copyright {
-        font-size: 15px;
-    }
+  section section img {
+    width: 160%;
+  }
+  .titulo-redes h1 {
+    font-size: 50px;
+  }
+  .instagram-titulo h2,
+  .facebook-titulo h2,
+  .youtube-titulo h2 {
+    font-size: 30px;
+  }
+  .footer-terms {
+    font-size: 15px;
+  }
+  .copyright {
+    font-size: 15px;
+  }
 }
-
 /* Mobile S */
 @media only screen and (max-width: 320px) {
-
-    section section img {
-        width: 160%;
-    }
-
-    .titulo-redes h1 {
-        font-size: 40px;
-    }
-
-    .instagram-titulo h2,
-    .facebook-titulo h2,
-    .youtube-titulo h2 {
-        font-size: 25px;
-    }
-    
-    .footer-terms {
-        font-size: 15px;
-    }
-    
-    .copyright {
-        font-size: 15px;
-    }
+  section section img {
+    width: 160%;
+  }
+  .titulo-redes h1 {
+    font-size: 40px;
+  }
+  .instagram-titulo h2,
+  .facebook-titulo h2,
+  .youtube-titulo h2 {
+    font-size: 25px;
+  }
+  .footer-terms {
+    font-size: 15px;
+  }
+  .copyright {
+    font-size: 15px;
+  }
 }
-
-/* Modificando menú hamburguesa de Bootstrap */
+/*Modificando menú hamburguesa de Bootstrap*/
 @media only screen and (max-width: 990px) {
-    .pages {
-        padding: 10px 0px;
-        text-align: center;
-    }
-
-    .pages:not(:first-child) {
-        border-top: 2px grey solid;
-    }
-
-    .navegable {
-        justify-content: center;
-        margin-right: 0px;
-        margin-top: 30px;
-    }
-
-    .navbar-toggler {
-        margin-right: 10%;
-        color: transparent;
-        border: transparent;
-    }
-
-    .navbar-toggler-icon {
-        background-image: url(../img/icono-menu-hambuguesa.png);
-    }
-
-    .navbar-collapse {
-        transition: .6s;
-        border: 1px grey solid;
-        border-radius: 10px;
-    }
+  .pages {
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .pages:not(:first-child) {
+    border-top: 2px grey solid;
+  }
+  .navegable {
+    justify-content: center;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .navbar-toggler {
+    margin-right: 10%;
+    color: transparent;
+    border: transparent;
+  }
+  .navbar-toggler-icon {
+    background-image: url(../img/icono-menu-hambuguesa.png);
+  }
+  .navbar-collapse {
+    transition: 0.6s;
+    border: 1px grey solid;
+    border-radius: 10px;
+  }
 }
+
+/*# sourceMappingURL=style1.css.map */

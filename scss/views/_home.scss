@@ -1,0 +1,80 @@
+/*PESTAÑA HOME*/
+/* Modificando la seccion ACERCA DE MESSI */
+.aboutmessi {
+    @include home-sections;
+    border: $border;
+    .textabout {
+        @include carousel-container;
+        border: $border;
+        h2 {
+            @include principal-carousel-title;
+        }
+    }
+    .imgabout {
+        @include section-image-container;
+        border: $border;
+        img {
+            z-index: -1;
+        }
+    }
+}
+
+/* Modificando la seccion ESTADISTICAS */
+.stadisticsmessi {
+    @include home-sections;
+    border: $border;
+    .textstadisticsmessi {
+        @include carousel-container;
+        border: $border;
+        h2 {
+            @include principal-carousel-title;
+        }
+    }
+    .imgstadisticsmessi {
+        @include section-image-container;
+        border: $border;
+        img {
+            z-index: -1;
+        }
+    }
+}
+
+/* Modificando la seccion EQUIPOS DONDE HA JUGADO */
+.teamshasbeen {
+    @include home-sections;
+    border: $border;
+    .texthasbeen {
+        @include carousel-container;
+        border: $border;
+        h2 {
+            @include principal-carousel-title;
+        }
+    }
+    .imghasbeen {
+        @include section-image-container;
+        border: $border;
+        img {
+            z-index: -1;
+        }
+    }
+}
+
+/* Modificando la seccion PALMARES */
+.palmares {
+    @include home-sections;
+    border: $border;
+    .textpalmares {
+        @include carousel-container;
+        border: $border;
+        h2 {
+            @include principal-carousel-title;
+        }
+    }
+    .imgpalmares {
+        @include section-image-container;
+        border: $border;
+        img {
+            z-index: -1;
+        }
+    }
+}

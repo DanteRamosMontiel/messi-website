@@ -1,0 +1,11 @@
+/*PESTAÑA MERCHANDISING*/
+/*Modificando el titulo*/
+.titulo-tienda {
+    @include flex-center;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    h1 {
+        @include font-style(('Rubik', sans-serif), 70px, 900, center);
+        color: $white;
+    }
+}

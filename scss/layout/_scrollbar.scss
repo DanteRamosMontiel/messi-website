@@ -1,0 +1,13 @@
+/*Cambiando el color de fondo de la web y modificando el ScrollBar*/
+body {
+    background-color: $principal-bg;
+&::-webkit-scrollbar{
+      width: 18px;
+    &-thumb {
+        background: #212121;
+        border-radius: 10px;
+    }
+    }
+}
+
+

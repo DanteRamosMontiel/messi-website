@@ -1,0 +1,110 @@
+/*PESTAÑA SOCIAL MEDIA*/
+/*Modificando el titulo*/
+.titulo-redes {
+    @include flex-center;
+    margin-top: 140px;
+    h1 {
+        @include font-style(('Rubik', sans-serif), 70px, 900, center);
+        color: $white;
+    }
+}
+
+/*Modificando acordeones en rasgos generales*/
+.acordeones {
+    @include flex-personalizated(center, center, column);
+    margin: 50px 0px;
+}
+
+.accordion {
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+/*Modificando acordeon de Instagram*/
+.accordion-button-instagram {
+    @include flex-personalizated(center, null, null);
+    @include gradient-instagram-button;
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-body-instagram {
+    @include flex-personalizated(space-around, center, row);
+    flex-wrap: wrap;
+    @include gradient-instagram;
+    div {
+        width: 500px;
+    }
+}
+
+.instagram-titulo {
+    h2 {
+        @include font-style(('Rubik', sans-serif), 50px, 700, null);
+        color: white;
+        padding: 20px 10px;
+    }
+}
+
+.instagram-media {
+    max-width: 100%;
+}
+
+/*Modificando acordeon de Facebook*/
+.accordion-button-facebook {
+    @include flex-personalizated(center, null, null);
+    @include gradient-facebook;
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-body-facebook {
+    @include flex-personalizated(space-around, center, row);
+    flex-wrap: wrap;
+    @include gradient-facebook;
+    div {
+        width: 500px;
+    }
+}
+
+.facebook-titulo {
+    h2 {
+        @include font-style(('Rubik', sans-serif), 50px, 700, null);
+        color: white;
+        padding: 20px 10px;
+    }
+}
+
+.facebook-iframe {
+    background-color: white;
+    margin: 5px 0px;
+    max-width: 100%;
+}
+
+/*Modificando acordeon de Youtube*/
+.accordion-button-youtube {
+    @include flex-personalizated(center, null, null);
+    @include gradient-youtube;
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-body-youtube {
+    @include flex-personalizated(space-around, center, row);
+    flex-wrap: wrap;
+    @include gradient-youtube;
+    div {
+        width: 500px;
+    }
+}
+
+.youtube-titulo {
+    h2 {
+        @include font-style(('Rubik', sans-serif), 50px, 700, null);
+        color: white;
+        padding: 20px 10px;
+    }
+}
+
+.youtube-iframe {
+    max-width: 100%;
+}

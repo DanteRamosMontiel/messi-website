@@ -1,0 +1,40 @@
+/*Modificando el Header*/
+.header {
+    width: 100%;
+    min-height: 65px;
+    background-color: $header-bg;
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    z-index: 100;
+}
+
+.logo {
+    @include flex-personalizated(null, center, null);
+    transition: .4s;
+    margin-left: 10%;
+    @include sizes(68px, 60px);
+&:hover{
+    scale: .9;
+}
+    img {
+        height: 60px;
+    }
+}
+
+.navegable {
+    @include flex-end;
+    margin-right: 10vw;
+    text-align: end;
+}
+
+.pages {
+    @include font-style(('Rubik', sans-serif), 20px, 500, null);
+    margin: 0px 15px;
+    color: gold;
+    transition: .3s;
+&:hover {
+    color: #635820;
+    scale: .9;
+}
+}

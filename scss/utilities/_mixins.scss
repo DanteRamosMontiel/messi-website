@@ -1,0 +1,159 @@
+//Posicionamiento//
+
+@mixin flex-personalizated ($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+//Sizes//
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+//Font Styles//
+@mixin font-style($font-family, $font-size, $font-weight, $text-align) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-align: $text-align;
+}
+
+//Secciones (Carousel + Image)//
+
+@mixin home-sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    overflow: hidden;
+    margin-top: 200px;
+    max-width: 1920px;
+}
+
+//Carousele & Title Container//
+
+@mixin carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 100%;
+}
+
+//Image Container//
+
+@mixin section-image-container {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//Estilos de Titulos//
+
+@mixin principal-page-title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 70px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+}
+
+@mixin principal-page-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+
+@mixin principal-carousel-title {
+    font-family: 'Rubik', sans-serif;
+    color: gold;
+    font-size: 50px;
+    text-align: center;
+}
+
+@mixin carousel-text {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+//Gradients//
+
+@mixin gradient-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+@mixin gradient-instagram-button {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc2743', endColorstr='#bc1888', GradientType=1);
+}
+
+@mixin gradient-facebook {
+    background: rgb(30, 30, 149);
+    background: -moz-linear-gradient(45deg, rgba(30, 30, 149, 1) 25%, rgba(59, 89, 152, 1) 65%, rgba(88, 116, 175, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(30, 30, 149, 1) 25%, rgba(59, 89, 152, 1) 65%, rgba(88, 116, 175, 1) 100%);
+    background: linear-gradient(45deg, rgba(30, 30, 149, 1) 25%, rgba(59, 89, 152, 1) 65%, rgba(88, 116, 175, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e95", endColorstr="#5874af", GradientType=1);
+}
+
+@mixin gradient-youtube {
+    background: rgb(108, 47, 45);
+    background: -moz-linear-gradient(45deg, rgba(108, 47, 45, 1) 17%, rgba(196, 48, 43, 1) 59%, rgba(203, 99, 95, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(108, 47, 45, 1) 17%, rgba(196, 48, 43, 1) 59%, rgba(203, 99, 95, 1) 100%);
+    background: linear-gradient(45deg, rgba(108, 47, 45, 1) 17%, rgba(196, 48, 43, 1) 59%, rgba(203, 99, 95, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c2f2d", endColorstr="#cb635f", GradientType=1);
+}
