@@ -157,3 +157,19 @@
     background: linear-gradient(45deg, rgba(108, 47, 45, 1) 17%, rgba(196, 48, 43, 1) 59%, rgba(203, 99, 95, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c2f2d", endColorstr="#cb635f", GradientType=1);
 }
+
+@mixin gradient-sponsors {
+    background: rgb(225, 117, 156);
+    background: -moz-linear-gradient(45deg, rgba(225, 117, 156, 1) 21%, rgba(235, 193, 208, 1) 97%);
+    background: -webkit-linear-gradient(45deg, rgba(225, 117, 156, 1) 21%, rgba(235, 193, 208, 1) 97%);
+    background: linear-gradient(45deg, rgba(225, 117, 156, 1) 21%, rgba(235, 193, 208, 1) 97%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1759c", endColorstr="#ebc1d0", GradientType=1);
+}
+
+//Shadows//
+
+@mixin card-shadow {
+    box-shadow: 10px 10px 23px 4px $header-bg;
+    -webkit-box-shadow: 10px 10px 23px 4px $header-bg;
+    -moz-box-shadow: 10px 10px 23px 4px $header-bg;
+}

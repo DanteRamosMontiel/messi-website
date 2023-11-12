@@ -1,8 +1,102 @@
 /*MediaQuerys para responsive*/
+
+/*Laptop L*/
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+    .banner-img {
+        width: 700px;
+        img {
+            width: 800px;
+        }
+    }
+
+    .banner-title {
+        h1 {
+            font-size: 70px;
+        }
+    }
+
+    .sponsor-img {
+        width: 300px;
+    }
+
+    .sponsors-carousel {
+        height: 400px;
+    }
+
+}
 /*Laptop*/
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
     .titulo-redes h1 {
         max-width: 80%;
+    }
+
+    .banner{
+        height: 600px;
+        margin-top: 80px;
+    }
+
+    .banner-img {
+        width: 550px;
+        img {
+            width: 680px;
+        }
+    }
+
+    .banner-title {
+        max-width: 460px;
+        h1 {
+            font-size: 65px;
+            margin-right: 20px;
+        }
+    }
+
+    .sponsor-img {
+        width: 200px;
+    }
+
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 100px;
+    }
+
+    .sponsor-carousel {
+        height: 350px;
+    }
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+    .banner{
+        height: 480px;
+        margin-top: 80px;
+        justify-content: space-between;
+    }
+
+    .banner-img {
+        width: 450px;
+        img {
+            width: 530px;
+        }
+    }
+
+    .banner-title {
+        max-width: 300px;
+        h1 {
+            font-size: 44px;
+            margin-right: 10px;
+        }
+    }
+
+    .sponsor-img {
+        width: 150px;
+    }
+    
+    .carousel-control-next, .carousel-control-prev {
+        width: 80px;
+    }
+
+    .sponsor-carousel {
+        height: 200px;
     }
 }
 
@@ -12,10 +106,47 @@
         width: 160%;
     }
 
-    .titulo-redes {
+    .titulo-redes,.titulo-tienda {
         h1 {
             font-size: 60px;
         }
+    }
+
+    .banner{
+        height: 200px;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+
+    .banner-img {
+        width: 200px;
+        img {
+            width: 250px;
+        }
+    }
+
+    .banner-title {
+        max-width: 225px;
+        h1 {
+            font-size: 30px;
+            margin-right: 7px;
+        }
+    }
+
+    .sponsor-img {
+        width: 100px;
+    }
+    
+    .carousel-control-next, .carousel-control-prev {
+        width: 30px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 15px;
+    }
+
+    .sponsor-carousel {
+        height: 200px;
     }
 
     .instagram-titulo h2,
@@ -36,12 +167,51 @@
 /* Mobile M */
 @media only screen and (max-width: 375px) and (min-width: 321px) {
 
-    section section img {
+    .imagen {
         width: 160%;
     }
 
-    .titulo-redes h1 {
-        font-size: 50px;
+    .titulo-redes, .titulo-tienda {
+        h1{
+            font-size: 50px;
+        }
+    }
+
+    .banner{
+        height: 200px;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+
+    .banner-img {
+        width: 180px;
+        img {
+            width: 220px;
+        }
+    }
+
+    .banner-title {
+        max-width: 225px;
+        h1 {
+            font-size: 26px;
+            margin-right: 4px;
+        }
+    }
+
+    .sponsor-img {
+        width: 85px;
+    }
+    
+    .carousel-control-next, .carousel-control-prev {
+        width: 30px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 15px;
+    }
+
+    .sponsor-carousel {
+        height: 200px;
     }
 
     .instagram-titulo h2,
@@ -62,12 +232,58 @@
 /* Mobile S */
 @media only screen and (max-width: 320px) {
 
-    section section img {
+    .imagen {
         width: 160%;
     }
 
-    .titulo-redes h1 {
-        font-size: 40px;
+    .titulo-redes, .titulo-tienda {
+        h1 {
+            font-size: 41px;
+        }
+    }
+
+    .banner{
+        height: 190px;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+
+    .banner-img {
+        width: 160px;
+        img {
+            width: 210px;
+        }
+    }
+
+    .banner-title {
+        max-width: 225px;
+        h1 {
+            font-size: 21px;
+            margin-right: 3px;
+        }
+    }
+
+    .sponsor-img {
+        width: 75px;
+    }
+    
+    .carousel-control-next, .carousel-control-prev {
+        width: 30px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 15px;
+    }
+
+    .sponsor-carousel {
+        height: 200px;
+    }
+
+    .buy-btn {
+        font-size: 25px;
+    &:hover {
+        font-size: 28px;
+    }
     }
 
     .instagram-titulo h2,

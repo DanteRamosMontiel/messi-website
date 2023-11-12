@@ -1,0 +1,50 @@
+/*PESTAÑA SPONSORS*/
+
+/*Modificando el banner*/
+.banner {
+    @include sizes(100%, 700px);
+    @include flex-personalizated(space-around, center,row);
+    background-color: #333333;
+    margin-top: 140px;
+    @include gradient-sponsors;
+}
+
+.banner-img{
+    z-index: 10;
+    img{
+        transition: transform .5s;
+        z-index: 10;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+}
+
+.banner-title {
+    h1 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 90px;
+        color: #fff;
+        font-weight: 900;
+        text-align: end;
+        margin-right: 50px;
+        color: beige;
+    }
+}
+
+
+/*Modificando el carousel y sus imagenes*/
+.sponsor-img {
+    width: 400px;
+}
+.sponsor-carousel{
+    height: 600px;
+    background-color: #333333;
+&.active {
+    @include flex-around;
+}
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 150px;
+}
