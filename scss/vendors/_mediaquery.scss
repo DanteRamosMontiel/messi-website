@@ -65,17 +65,19 @@
 }
 
 /*Tablet*/
-@media only screen and (max-width: 768px) and (min-width: 426px) {
+@media only screen and (max-width: 768px) and (min-width: 431px) {
     .banner{
-        height: 480px;
-        margin-top: 80px;
+        height: 400px;
+        margin-top: 120px;
         justify-content: space-between;
     }
 
     .banner-img {
         width: 450px;
+        margin-left: -60px;
         img {
             width: 530px;
+            margin-bottom: 50px;
         }
     }
 
@@ -101,7 +103,7 @@
 }
 
 /*Mobile L*/
-@media only screen and (max-width: 425px) and (min-width: 376px) {
+@media only screen and (max-width: 430px) and (min-width: 376px) {
     .imagen {
         width: 160%;
     }

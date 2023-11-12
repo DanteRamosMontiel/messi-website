@@ -10,8 +10,10 @@
 }
 
 .banner-img{
+    max-width: 50%;
     z-index: 10;
     img{
+        max-width: 170%;
         transition: transform .5s;
         z-index: 10;
     &:hover{
@@ -21,6 +23,7 @@
 }
 
 .banner-title {
+    max-width: 50%;
     h1 {
         font-family: 'Rubik', sans-serif;
         font-size: 90px;

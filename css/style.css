@@ -314,9 +314,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .banner-img {
+  max-width: 50%;
   z-index: 10;
 }
 .banner-img img {
+  max-width: 170%;
   transition: transform 0.5s;
   z-index: 10;
 }
@@ -324,6 +326,9 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.02);
 }
 
+.banner-title {
+  max-width: 50%;
+}
 .banner-title h1 {
   font-family: "Rubik", sans-serif;
   font-size: 90px;
@@ -597,17 +602,19 @@ body::-webkit-scrollbar-thumb {
   }
 }
 /*Tablet*/
-@media only screen and (max-width: 768px) and (min-width: 426px) {
+@media only screen and (max-width: 768px) and (min-width: 431px) {
   .banner {
-    height: 480px;
-    margin-top: 80px;
+    height: 400px;
+    margin-top: 120px;
     justify-content: space-between;
   }
   .banner-img {
     width: 450px;
+    margin-left: -60px;
   }
   .banner-img img {
     width: 530px;
+    margin-bottom: 50px;
   }
   .banner-title {
     max-width: 300px;
@@ -627,7 +634,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 /*Mobile L*/
-@media only screen and (max-width: 425px) and (min-width: 376px) {
+@media only screen and (max-width: 430px) and (min-width: 376px) {
   .imagen {
     width: 160%;
   }
