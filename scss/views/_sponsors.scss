@@ -14,12 +14,8 @@
     z-index: 10;
     img{
         max-width: 170%;
-        transition: transform .5s;
         z-index: 10;
-    &:hover{
-        transform: scale(1.02);
     }
-}
 }
 
 .banner-title {
@@ -38,16 +34,32 @@
 
 /*Modificando el carousel y sus imagenes*/
 .sponsor-img {
-    width: 400px;
+    width: 370px;
+    transition: transform .4s;
+&:hover{
+    transform: scale(1.05);
+}
 }
 .sponsor-carousel{
     height: 600px;
     background-color: #333333;
 &.active {
-    @include flex-around;
+    @include flex-center;
 }
 }
 
-.carousel-control-next, .carousel-control-prev {
-    width: 150px;
+.carousel-items-container {
+    @include sizes(100%,100%);
+    @include flex-around;
+}
+
+.carousel-indicators [data-bs-target] {
+    @include sizes(20px,20px);
+    border-radius: 100%;
+    margin: 7px;
+    opacity: .08;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
 }

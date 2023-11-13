@@ -54,11 +54,6 @@
         width: 200px;
     }
 
-
-    .carousel-control-next, .carousel-control-prev {
-        width: 100px;
-    }
-
     .sponsor-carousel {
         height: 350px;
     }
@@ -92,11 +87,13 @@
     .sponsor-img {
         width: 150px;
     }
-    
-    .carousel-control-next, .carousel-control-prev {
-        width: 80px;
-    }
 
+    .carousel-indicators {
+        margin-bottom: -8px;
+    }
+    .carousel-indicators [data-bs-target] {
+        @include sizes(12px,12px);
+    }
     .sponsor-carousel {
         height: 200px;
     }
@@ -139,12 +136,11 @@
         width: 100px;
     }
     
-    .carousel-control-next, .carousel-control-prev {
-        width: 30px;
+    .carousel-indicators {
+        margin-bottom: -8px;
     }
-
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-        width: 15px;
+    .carousel-indicators [data-bs-target] {
+        @include sizes(12px,12px);
     }
 
     .sponsor-carousel {
@@ -203,13 +199,12 @@
     .sponsor-img {
         width: 85px;
     }
-    
-    .carousel-control-next, .carousel-control-prev {
-        width: 30px;
-    }
 
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-        width: 15px;
+    .carousel-indicators {
+        margin-bottom: -8px;
+    }
+    .carousel-indicators [data-bs-target] {
+        @include sizes(12px,12px);
     }
 
     .sponsor-carousel {
@@ -268,13 +263,12 @@
     .sponsor-img {
         width: 75px;
     }
-    
-    .carousel-control-next, .carousel-control-prev {
-        width: 30px;
-    }
 
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-        width: 15px;
+    .carousel-indicators {
+        margin-bottom: -8px;
+    }
+    .carousel-indicators [data-bs-target] {
+        @include sizes(12px,12px);
     }
 
     .sponsor-carousel {
