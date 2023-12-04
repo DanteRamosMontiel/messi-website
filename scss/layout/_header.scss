@@ -7,14 +7,8 @@
     top: 0;
     padding: 15px;
     z-index: 100;
-    border-radius: 0px 0px 30px 30px;
-    transition: top 0.2s ease-in-out;
+    animation: headerAnimation 3s ease-in-out;
 }
-
-.nav-up {
-    top: -40px;
-}
-
 .logo {
     @include flex-personalizated(null, center, null);
     transition: .4s;
@@ -35,7 +29,7 @@
 }
 
 .pages {
-    @include font-style(('Rubik', sans-serif), 20px, 500, null);
+    @include font-style($monserrat, 20px, 500, null);
     margin: 0px 15px;
     color: gold;
     transition: .3s;

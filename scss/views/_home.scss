@@ -2,172 +2,492 @@
 /* Modificando las secciones y su contenido*/
 .principal-section {
     @include home-sections;
+
     .principal-section-text {
         @include carousel-container;
+
         h2 {
             @include principal-carousel-title;
+            font-size: 50px;
             margin-bottom: 40px
         }
     }
+
     .principal-section-image {
         @include section-image-container;
+
         img {
             z-index: -1;
         }
     }
 }
+
 .slides {
     width: 100%;
     height: 460px;
 }
 
-/*Carousel de Equipos donde ha jugado*/
-.teams-info-container{ 
+.slide-xl {
+    width: 100%;
+    height: 800px;
+    @include flex-center;
+}
+
+.titulo {
+    @include principal-carousel-title;
+    font-size: 50px;
+}
+
+/*Banner principal*/
+.home-banner {
+    @include sizes(100%, 100vh);
+    background-image: url(https://messi.com/wp-content/uploads/2023/11/julienscussel_23-10-30_0304-scaled.jpg);
+    @include flex-personalizated(end, end, null);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: homeBannerAnimation 4s ease-in-out;
+
+    div {
+        max-width: 33%;
+        margin: 0px 50px 150px 0px;
+
+        img {
+            max-width: 100%;
+            animation: homeMessiTitleAnimation 3s ease-in-out
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            letter-spacing: 40px;
+            margin-bottom: 40px;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            animation: homeLionelAnimation 3s ease-in-out;
+        }
+    }
+}
+
+.welcome {
+    @include sizes(100%, 150px);
+    @include flex-center;
+    background: rgb(247, 181, 205);
+    background: -moz-linear-gradient(135deg, rgba(247, 181, 205, 1) 50%, rgba(33, 33, 33, 1) 50%);
+    background: -webkit-linear-gradient(135deg, rgba(247, 181, 205, 1) 50%, rgba(33, 33, 33, 1) 50%);
+    background: linear-gradient(135deg, rgba(247, 181, 205, 1) 50%, rgba(33, 33, 33, 1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7b5cd", endColorstr="#212121", GradientType=1);
+
+    h2 {
+        font-family: $monserrat;
+        font-weight: 800;
+        font-size: 60px;
+        color: white;
+    }
+}
+
+/*Carousel de Estadisticas*/
+/*Patidos Jugados*/
+.carousel-container {
+    @include flex-center;
+    width: 100%;
+}
+
+.item-container {
+    @include flex-center;
+}
+
+.est-container, .goles{
+    padding: 20px;
+
+    border-radius: 20px;
+}
+
+.seccion-estadisticas {
+    @include sizes(100%, 900px);
+    overflow: hidden;
+    @include flex-personalizated(center, center, column);
+    padding-top: 120px;
+}
+
+.partidos-container, .tit-trof-container, .goles {
+    @include sizes(70%, 700px);
+}
+
+.partidos-container{
+    @include flex-personalizated(space-around, start, column);
+}
+
+.partidos {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+
+    h2 {
+        font-family: $monserrat;
+        color: white;
+        font-weight: 700;
+        margin-left: 30px;
+    }
+
+    div {
+        @include sizes(70px, 70px);
+        margin-right: 30px;
+        border: 3px solid gold;
+        border-radius: 50%;
+        @include flex-center;
+
+        h3 {
+            font-family: $monserrat;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+        }
+    }
+
+    &-main {
+        width: 100%;
+        background-color: #313131;
+        animation: partidosAnimation 3s ease-in-out;
+    }
+
+    &-barca {
+        width: 80%;
+        background-color: #730d40;
+        animation: partidosAnimationBarca 3s ease-in-out;
+    }
+
+    &-arg {
+        width: 45%;
+        background-color: rgb(72, 154, 182);
+        animation: partidosAnimationArg 3s ease-in-out;
+    }
+
+    &-psg {
+        width: 35%;
+        background-color: rgb(54, 15, 105);
+        animation: partidosAnimationPsg 3s ease-in-out;
+    }
+
+    &-miami {
+        width: 25%;
+        background-color: #F7B5CD;
+        animation: partidosAnimationMiami 3s ease-in-out;
+    }
+}
+
+/*Goles*/
+.goles{
+    @include flex-around;
+    flex-wrap: wrap;
+    &-pic-container {
+        @include sizes(500px,600px);
+        img{
+            width: 550px;
+            position: relative;
+            top: 20px;
+        }
+        h3{
+            font-family: $monserrat;
+            font-size: 50px;
+            font-weight: 800;
+            letter-spacing: 10px;
+            color: white;
+            position: relative;
+            bottom: 400px;
+            left: 380px;
+        }
+    }
+    &-stats-container {
+        @include sizes(500px,600px);
+        @include flex-personalizated(space-evenly, end, column);
+    }
+}
+.total-goles{
+    @include sizes(90%,25%);
+    background-color: #3d3d3d;
+    border-radius: 20px;
+    @include flex-center;
+    h3{
+        font-family: $monserrat;
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.goles-equipos{
+    @include sizes(90%,70%);
+    @include flex-personalizated(space-evenly,center,column);
+    &-1{
+        @include sizes(100%,47.5%);
+        @include flex-between;
+    }
+    &-2{
+        @include sizes(100%,47.5%);
+        @include flex-between;
+    }
+}
+
+.goles-barca{
+    @include sizes(47.5%,90%);
+    @include flex-center;
+    border-radius: 20px;
+    background-color: #6c183b;
+    h3{
+        font-family: $monserrat;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+.goles-psg{
+    @include sizes(47.5%,90%);
+    @include flex-center;
+    border-radius: 20px;
+    background-color: #0f4063;
+    h3{
+        font-family: $monserrat;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+.goles-miami{
+    @include sizes(47.5%,90%);
+    @include flex-center;
+    border-radius: 20px;
+    background-color: #F7B5CD;
+    h3{
+        font-family: $monserrat;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+.goles-arg{
+    @include sizes(47.5%,90%);
+    @include flex-center;
+    border-radius: 20px;
+    background-color: rgb(37, 123, 151);
+    h3{
+        font-family: $monserrat;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+
+/*Trofeos y Titulos*/
+.tit-trof-container{
+    @include flex-personalizated(space-evenly, center, row);
+    flex-wrap: wrap;
+}
+
+.tit-trof{
+    @include sizes(450px,500px);
+    border: 4px solid #b89e14;
+    border-radius: 20px;
+    @include flex-personalizated(space-evenly,center,column);
+    background-color: #212121
+}
+
+.tit-trof-container-text{
     @include flex-personalizated(space-around,center,column);
+    h3{
+        font-family: $monserrat;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        color: white
+    }
+}
+
+.tit-trof-container-img{
+    img{
+        width: 300px;
+        animation: titTrofAnimation 3s ease-in-out infinite;
+    }
+}
+
+/*Carousel de Equipos donde ha jugado*/
+.teams-info-container {
+    @include flex-personalizated(space-around, center, column);
 }
 
 .team-logo {
-    @include sizes(300px,300px);
+    @include sizes(300px, 300px);
     transition: transform .5s;
 
-&:hover{
-    transform: scale(1.02);
-}
-&-name{
-    @include font-style($rubik,25px,none,center);
-    color: white;
-    padding-top: 20px; 
-}
-&-years {
-    @include font-style($rubik,30px,600,center);
-    color: white;
-    padding-top: 20px;
-    letter-spacing: 2px;
-}
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    &-name {
+        @include font-style($rubik, 25px, none, center);
+        color: white;
+        padding-top: 20px;
+    }
+
+    &-years {
+        @include font-style($rubik, 30px, 600, center);
+        color: white;
+        padding-top: 20px;
+        letter-spacing: 2px;
+    }
 }
 
 
 
 /*Carousel de Palmarés*/
-.palmares{
+.palmares {
     padding-bottom: 50px
 }
+
 .palmares-info-container {
-    @include flex-personalizated(space-around,center,column);
+    @include flex-personalizated(space-around, center, column);
 }
+
 .palmares-title {
-    @include font-style($rubik,30px,none,center);
+    @include font-style($rubik, 30px, none, center);
     color: white;
     padding-top: 10px;
 }
-.palmares-number{
-    @include font-style($rubik,none,700,center);
+
+.palmares-number {
+    @include font-style($rubik, none, 700, center);
     color: black;
     position: absolute;
 }
+
 .palmares-years {
-    @include font-style($rubik,20px,600,center);
+    @include font-style($rubik, 20px, 600, center);
     color: white;
     padding-top: 20px;
     letter-spacing: 2px;
 }
-.champions-title{
-&-number{
-    font-size: 60px;
-    top: 70px;
-}
-&-years{ 
-    max-width: 70%
-}
-}
-.laliga-title{
-&-number{
-    font-size: 50px;
-    top: 0px
-}
-&-years{ 
-    max-width: 70% ;
-}
-}
-.copadelrey-title{
-&-number{
-    font-size: 50px;
-    top: 10px
-}
-&-years{ 
-    max-width: 60% ;
-}
-}
-.mundialdeclubes-title{
-&-number{
-    font-size: 50px;
-    top: -4px
-}
-&-years{ 
-    max-width: 60% ;
-}
-}
-.supercopaeuropa-title{
-&-number{
-    font-size: 50px;
-    top: 40px
-}
-}
-.supercopaespaña-title{
-&-number{
-    font-size: 50px;
-    top: 5px
-}
-&-years{ 
-    max-width: 60%;
-}
-}
-.ligueone-title{
-&-number{
-    font-size: 60px;
-    top: 150px
-}
+
+.champions-title {
+    &-number {
+        font-size: 60px;
+        top: 70px;
+    }
+
+    &-years {
+        max-width: 70%
+    }
 }
 
-.supercopafrancia-title{
-&-number{
-    font-size: 60px;
-    top: 60px;
+.laliga-title {
+    &-number {
+        font-size: 50px;
+        top: 0px
+    }
+
+    &-years {
+        max-width: 70%;
+    }
 }
+
+.copadelrey-title {
+    &-number {
+        font-size: 50px;
+        top: 10px
+    }
+
+    &-years {
+        max-width: 60%;
+    }
 }
-.leaguescup-title{
-&-number{
-    font-size: 60px;
-    top: 60px;
+
+.mundialdeclubes-title {
+    &-number {
+        font-size: 50px;
+        top: -4px
+    }
+
+    &-years {
+        max-width: 60%;
+    }
 }
+
+.supercopaeuropa-title {
+    &-number {
+        font-size: 50px;
+        top: 40px
+    }
 }
-.copaamerica-title{
-&-number{
-    font-size: 60px;
-    top: 40px;
+
+.supercopaespaña-title {
+    &-number {
+        font-size: 50px;
+        top: 5px
+    }
+
+    &-years {
+        max-width: 60%;
+    }
 }
+
+.ligueone-title {
+    &-number {
+        font-size: 60px;
+        top: 150px
+    }
 }
-.mundial20-title{
-&-number{
-    font-size: 50px;
-    bottom: 90px;
+
+.supercopafrancia-title {
+    &-number {
+        font-size: 60px;
+        top: 60px;
+    }
 }
+
+.leaguescup-title {
+    &-number {
+        font-size: 60px;
+        top: 60px;
+    }
 }
-.medallaoro-title{
-&-number{
-    font-size: 60px;
-    top: 100px;
+
+.copaamerica-title {
+    &-number {
+        font-size: 60px;
+        top: 40px;
+    }
 }
+
+.mundial20-title {
+    &-number {
+        font-size: 50px;
+        bottom: 90px;
+    }
 }
-.mundial2022-title{
-&-number{
-    font-size: 60px;
-    top: 60px;
+
+.medallaoro-title {
+    &-number {
+        font-size: 60px;
+        top: 100px;
+    }
 }
+
+.mundial2022-title {
+    &-number {
+        font-size: 60px;
+        top: 60px;
+    }
 }
-.finalissima-title{
-&-number{
-    font-size: 60px;
-    top: 50px;
-}
+
+.finalissima-title {
+    &-number {
+        font-size: 60px;
+        top: 50px;
+    }
 }

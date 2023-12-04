@@ -66,7 +66,7 @@
     flex-direction: row;
     flex-wrap: wrap-reverse;
     overflow: hidden;
-    margin-top: 200px;
+    margin-top: 100px;
     max-width: 1920px;
 }
 
@@ -93,7 +93,7 @@
 //Estilos de Titulos//
 
 @mixin principal-page-title {
-    font-family: 'Rubik', sans-serif;
+    font-family: $monserrat;
     font-size: 70px;
     color: #fff;
     font-weight: 900;
@@ -109,17 +109,17 @@
 }
 
 @mixin principal-carousel-title {
-    font-family: 'Rubik', sans-serif;
+    font-family: $monserrat;
     color: gold;
-    font-size: 50px;
     text-align: center;
+    font-weight: 700;
 }
 
 @mixin carousel-text {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 

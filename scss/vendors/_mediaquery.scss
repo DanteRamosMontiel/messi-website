@@ -23,6 +23,31 @@
         height: 400px;
     }
 
+    .home-banner{
+        background-position-x: 60%
+    }
+
+    .partidos-miami{
+        width: 35%;
+        animation: none
+    }
+
+    .goles-pic-container,.goles-stats-container{
+        @include sizes(360px,500px);
+    }
+
+    .goles-pic-container{
+        img{
+            width: 430px;
+        }
+        h3{
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: 7px;
+            bottom: 330px;
+            left: 290px;
+        }
+    }
 }
 /*Laptop*/
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
@@ -57,6 +82,62 @@
     .sponsor-carousel {
         height: 350px;
     }
+
+    .home-banner{
+        background-position-x: 40%;
+        div{
+            h1{
+                font-size: 40px;
+            }
+        }
+    }
+
+    .partidos-miami{
+        width: 35%;
+        animation: none
+    }
+
+    .partidos-psg{
+        animation: none;
+    }
+
+    .tit-trof{
+        width: 300px;
+        height: 350px;
+        &-container-img{
+            img{
+                width: 230px;
+            }
+        }
+        &-container-text{
+            h3{
+                font-size: 35px;
+            }
+        }
+    }
+
+    .goles-pic-container,.goles-stats-container{
+        @include sizes(300px,440px);
+    }
+
+    .goles-pic-container{
+        img{
+            width: 350px;
+        }
+        h3{
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: 7px;
+            bottom: 0px;
+            left: 40px;
+            text-align: center;
+        }
+    }
+
+    .goles{
+        flex-wrap: nowrap;
+    }
+
 }
 
 /*Tablet*/
@@ -96,6 +177,96 @@
     }
     .sponsor-carousel {
         height: 200px;
+    }
+
+    .home-banner{
+        background-position-x: 45%;
+        div{
+            h1{
+                font-size: 20px;
+                letter-spacing: 30px;
+            }
+        }
+    }
+
+    .partidos{
+        div{
+            @include sizes(55px,55px);
+        }
+        &-main{
+            animation: none;
+        }
+        &-barca{
+            width: 90%;
+            animation:none
+        }
+        &-arg{
+            width: 65%;
+            animation: none;
+        }
+        &-psg{
+            width: 50%;
+            animation: none;
+        }
+        &-miami{
+            width: 45%;
+            animation: none;
+        }
+
+    }
+
+    .tit-trof{
+        width: 350px;
+        height: 350px;
+        margin: 10px 0px;
+        &-container{
+            height: 740px;
+        }
+        &-container-img{
+            img{
+                width: 230px;
+            }
+        }
+        &-container-text{
+            h3{
+                font-size: 35px;
+            }
+        }
+    }
+
+    .goles-pic-container,.goles-stats-container{
+        @include sizes(300px,300px);
+    }
+
+    .goles-stats-container{
+        align-items: center;
+    }
+
+    .goles-pic-container{
+        img{
+            width: 300px;
+        }
+        h3{
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: 7px;
+            bottom: 230px;
+            left: 140px;
+            text-align: center;
+        }
+    }
+
+    .total-goles{
+        h3{
+            font-size: 30px;
+        }
+    }
+
+    .goles-barca, .goles-psg, .goles-miami, .goles-arg{
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+        }
     }
 }
 
@@ -147,10 +318,33 @@
         height: 200px;
     }
 
+    .home-banner{
+        background-position-x: 45%;
+        div{
+            img{
+                max-width: 120%;
+            }
+            h1{
+                font-size: 20px;
+                letter-spacing: 15px;
+            }
+        }
+    }
+
     .instagram-titulo h2,
     .facebook-titulo h2,
     .youtube-titulo h2 {
         font-size: 40px;
+    }
+
+    .submit-photo {
+        p {
+            font-size: 35px;
+        }
+    }
+
+    .form-control {
+        font-size: 15px;
     }
 
     .footer-terms {
@@ -159,6 +353,88 @@
     
     .copyright {
         font-size: 15px;
+    }
+
+    .partidos{
+        &-container{
+            height: 550px;
+        }
+        div{
+            @include sizes(55px,55px);
+        }
+        &-main{
+            animation: none;
+        }
+        &-barca{
+            width: 95%;
+            animation:none
+        }
+        &-arg{
+            width: 90%;
+            animation: none;
+        }
+        &-psg{
+            width: 80%;
+            animation: none;
+        }
+        &-miami{
+            width: 75%;
+            animation: none;
+        }
+    }
+
+    .tit-trof{
+        width: 350px;
+        height: 350px;
+        margin: 10px 0px;
+        &-container{
+            height: 740px;
+        }
+        &-container-img{
+            img{
+                width: 230px;
+            }
+        }
+        &-container-text{
+            h3{
+                font-size: 35px;
+            }
+        }
+    }
+
+    .goles-pic-container,.goles-stats-container{
+        @include sizes(300px,300px);
+    }
+
+    .goles-stats-container{
+        align-items: center;
+    }
+
+    .goles-pic-container{
+        img{
+            width: 250px;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            bottom: 10px;
+            left: 50px;
+            text-align: center;
+        }
+    }
+
+    .total-goles{
+        h3{
+            font-size: 30px;
+        }
+    }
+
+    .goles-barca, .goles-psg, .goles-miami, .goles-arg{
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+        }
     }
 }
 
@@ -217,12 +493,123 @@
         font-size: 30px;
     }
 
+    .home-banner{
+        background-position-x: 45%;
+        div{
+            img{
+                max-width: 120%;
+            }
+            h1{
+                font-size: 20px;
+                letter-spacing: 15px;
+            }
+        }
+    }
+
+    .welcome{
+        h2{
+            font-size: 40px;
+        }
+    }
+
+    .submit-photo {
+        p {
+            font-size: 35px;
+        }
+    }
+
+    .form-control {
+        font-size: 15px;
+    }
+
     .footer-terms {
         font-size: 15px;
     }
     
     .copyright {
         font-size: 15px;
+    }
+
+    .partidos{
+        div{
+            @include sizes(55px,55px);
+            h3{
+                font-size: 15px;
+            }
+        }
+        &-main{
+            animation: none;
+        }
+        &-barca{
+            width: 100%;
+            animation:none
+        }
+        &-arg{
+            width: 100%;
+            animation: none;
+        }
+        &-psg{
+            width: 100%;
+            animation: none;
+        }
+        &-miami{
+            width: 100%;
+            animation: none;
+        }
+    }
+
+    .tit-trof{
+        width: 350px;
+        height: 350px;
+        margin: 10px 0px;
+        &-container{
+            height: 740px;
+        }
+        &-container-img{
+            img{
+                width: 230px;
+            }
+        }
+        &-container-text{
+            h3{
+                font-size: 35px;
+            }
+        }
+    }
+
+    .goles-pic-container,.goles-stats-container{
+        @include sizes(300px,300px);
+    }
+
+    .goles-stats-container{
+        align-items: center;
+    }
+
+    .goles-pic-container{
+        img{
+            width: 250px;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            bottom: 5px;
+            left: 10px;
+            text-align: center;
+        }
+    }
+
+    .total-goles{
+        h3{
+            font-size: 27px;
+        }
+    }
+
+    .goles-barca, .goles-psg, .goles-miami, .goles-arg{
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+        }
     }
 }
 
@@ -287,6 +674,35 @@
     .youtube-titulo h2 {
         font-size: 25px;
     }
+
+    .home-banner{
+        background-position-x: 45%;
+        div{
+            img{
+                max-width: 120%;
+            }
+            h1{
+                font-size: 15px;
+                letter-spacing: 15px;
+            }
+        }
+    }
+
+    .welcome{
+        h2{
+            font-size: 35px;
+        }
+    }
+
+    .submit-photo {
+        p {
+            font-size: 25px;
+        }
+    }
+
+    .form-control {
+        font-size: 10px;
+    }
     
     .footer-terms {
         font-size: 15px;
@@ -327,5 +743,71 @@
         transition: .6s;
         border: 1px grey solid;
         border-radius: 10px;
+    }
+
+    .partidos{
+        h2{
+            font-size: 15px;
+        }
+        div{
+            @include sizes(50px,50px);
+            h3{
+                font-size: 15px;
+            }
+        }
+        &-main{
+            animation: none;
+        }
+        &-barca{
+            width: 100%;
+            animation:none
+        }
+        &-arg{
+            width: 100%;
+            animation: none;
+        }
+        &-psg{
+            width: 100%;
+            animation: none;
+        }
+        &-miami{
+            width: 100%;
+            animation: none;
+        }
+    }
+
+    .goles-pic-container,.goles-stats-container{
+        @include sizes(300px,300px);
+    }
+
+    .goles-stats-container{
+        align-items: center;
+    }
+
+    .goles-pic-container{
+        img{
+            width: 250px;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            bottom: 5px;
+            left: 10px;
+            text-align: center;
+        }
+    }
+
+    .total-goles{
+        h3{
+            font-size: 20px;
+        }
+    }
+
+    .goles-barca, .goles-psg, .goles-miami, .goles-arg{
+        h3{
+            font-size: 15px;
+            font-weight: 600;
+        }
     }
 }
