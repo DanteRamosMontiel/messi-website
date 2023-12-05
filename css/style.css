@@ -255,6 +255,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*Carousel de Estadisticas*/
+.titulo-estadisticas {
+  padding-bottom: 60px;
+}
+
 /*Patidos Jugados*/
 .carousel-container {
   display: flex;
@@ -1229,6 +1233,9 @@ body::-webkit-scrollbar-thumb {
   .goles {
     flex-wrap: nowrap;
   }
+  .slide-xl {
+    height: 600px;
+  }
 }
 /*Tablet*/
 @media only screen and (max-width: 768px) and (min-width: 431px) {
@@ -1295,19 +1302,21 @@ body::-webkit-scrollbar-thumb {
     width: 45%;
     animation: none;
   }
+  .titulo-estadisticas {
+    padding-bottom: 60px;
+  }
   .tit-trof {
-    width: 350px;
-    height: 350px;
-    margin: 10px 0px;
+    width: 290px;
+    height: 290px;
   }
   .tit-trof-container {
-    height: 740px;
+    height: 600px;
   }
   .tit-trof-container-img img {
-    width: 230px;
+    width: 200px;
   }
   .tit-trof-container-text h3 {
-    font-size: 35px;
+    font-size: 27px;
   }
   .goles-pic-container, .goles-stats-container {
     width: 300px;
@@ -1333,6 +1342,9 @@ body::-webkit-scrollbar-thumb {
   .goles-barca h3, .goles-psg h3, .goles-miami h3, .goles-arg h3 {
     font-size: 20px;
     font-weight: 600;
+  }
+  .slide-xl {
+    height: 600px;
   }
 }
 /*Mobile L*/
@@ -1428,18 +1440,20 @@ body::-webkit-scrollbar-thumb {
     animation: none;
   }
   .tit-trof {
-    width: 350px;
-    height: 350px;
-    margin: 10px 0px;
+    width: 290px;
+    height: 290px;
   }
   .tit-trof-container {
-    height: 740px;
+    height: 600px;
   }
   .tit-trof-container-img img {
-    width: 230px;
+    width: 200px;
   }
   .tit-trof-container-text h3 {
-    font-size: 35px;
+    font-size: 27px;
+  }
+  .titulo-estadisticas {
+    padding-bottom: 30px;
   }
   .goles-pic-container, .goles-stats-container {
     width: 300px;
@@ -1465,6 +1479,9 @@ body::-webkit-scrollbar-thumb {
   .goles-barca h3, .goles-psg h3, .goles-miami h3, .goles-arg h3 {
     font-size: 20px;
     font-weight: 600;
+  }
+  .slide-xl {
+    height: 600px;
   }
 }
 /* Mobile M */
@@ -1563,18 +1580,21 @@ body::-webkit-scrollbar-thumb {
     animation: none;
   }
   .tit-trof {
-    width: 350px;
-    height: 350px;
-    margin: 10px 0px;
+    width: 250px;
+    height: 250px;
   }
   .tit-trof-container {
-    height: 740px;
+    height: 600px;
   }
   .tit-trof-container-img img {
-    width: 230px;
+    width: 150px;
   }
   .tit-trof-container-text h3 {
-    font-size: 35px;
+    font-size: 24px;
+  }
+  .titulo-estadisticas {
+    padding-bottom: 30px;
+    font-size: 43px;
   }
   .goles-pic-container, .goles-stats-container {
     width: 300px;
@@ -1600,6 +1620,9 @@ body::-webkit-scrollbar-thumb {
   .goles-barca h3, .goles-psg h3, .goles-miami h3, .goles-arg h3 {
     font-size: 20px;
     font-weight: 600;
+  }
+  .slide-xl {
+    height: 600px;
   }
 }
 /* Mobile S */
@@ -1676,6 +1699,36 @@ body::-webkit-scrollbar-thumb {
   }
   .copyright {
     font-size: 15px;
+  }
+  .tit-trof {
+    width: 250px;
+    height: 250px;
+  }
+  .tit-trof-container {
+    height: 530px;
+  }
+  .tit-trof-container-img img {
+    width: 150px;
+  }
+  .tit-trof-container-text h3 {
+    font-size: 24px;
+  }
+  .titulo-estadisticas {
+    padding-bottom: 30px;
+    font-size: 35px;
+  }
+  .slide-xl {
+    height: 600px;
+  }
+  .partidos-container {
+    justify-content: center;
+  }
+  .partidos {
+    margin-bottom: 20px;
+  }
+  .team-logo {
+    width: 230px;
+    height: 230px;
   }
 }
 /*Modificando menú hamburguesa de Bootstrap*/

@@ -138,6 +138,10 @@
         flex-wrap: nowrap;
     }
 
+    .slide-xl {
+        height: 600px;
+    }
+
 }
 
 /*Tablet*/
@@ -215,21 +219,24 @@
 
     }
 
+    .titulo-estadisticas {
+        padding-bottom: 60px; 
+    }
+
     .tit-trof{
-        width: 350px;
-        height: 350px;
-        margin: 10px 0px;
+        width: 290px;
+        height: 290px;
         &-container{
-            height: 740px;
+            height: 600px;
         }
         &-container-img{
             img{
-                width: 230px;
+                width: 200px;
             }
         }
         &-container-text{
             h3{
-                font-size: 35px;
+                font-size: 27px;
             }
         }
     }
@@ -268,6 +275,11 @@
             font-weight: 600;
         }
     }
+
+    .slide-xl {
+        height: 600px;
+    }
+
 }
 
 /*Mobile L*/
@@ -384,22 +396,25 @@
     }
 
     .tit-trof{
-        width: 350px;
-        height: 350px;
-        margin: 10px 0px;
+        width: 290px;
+        height: 290px;
         &-container{
-            height: 740px;
+            height: 600px;
         }
         &-container-img{
             img{
-                width: 230px;
+                width: 200px;
             }
         }
         &-container-text{
             h3{
-                font-size: 35px;
+                font-size: 27px;
             }
         }
+    }
+
+    .titulo-estadisticas {
+        padding-bottom: 30px;
     }
 
     .goles-pic-container,.goles-stats-container{
@@ -436,6 +451,11 @@
             font-weight: 600;
         }
     }
+
+    .slide-xl {
+        height: 600px;
+    }
+
 }
 
 /* Mobile M */
@@ -559,22 +579,26 @@
     }
 
     .tit-trof{
-        width: 350px;
-        height: 350px;
-        margin: 10px 0px;
+        width: 250px;
+        height: 250px;
         &-container{
-            height: 740px;
+            height: 600px;
         }
         &-container-img{
             img{
-                width: 230px;
+                width: 150px;
             }
         }
         &-container-text{
             h3{
-                font-size: 35px;
+                font-size: 24px;
             }
         }
+    }
+
+    .titulo-estadisticas {
+        padding-bottom: 30px;
+        font-size: 43px;
     }
 
     .goles-pic-container,.goles-stats-container{
@@ -611,6 +635,11 @@
             font-weight: 600;
         }
     }
+
+    .slide-xl {
+        height: 600px;
+    }
+
 }
 
 /* Mobile S */
@@ -711,6 +740,46 @@
     .copyright {
         font-size: 15px;
     }
+
+    .tit-trof{
+        width: 250px;
+        height: 250px;
+        &-container{
+            height: 530px;
+        }
+        &-container-img{
+            img{
+                width: 150px;
+            }
+        }
+        &-container-text{
+            h3{
+                font-size: 24px;
+            }
+        }
+    }
+
+    .titulo-estadisticas {
+        padding-bottom: 30px;
+        font-size: 35px;
+    }
+
+    .slide-xl {
+        height: 600px;
+    }
+
+    .partidos-container{
+        justify-content: center;
+    }
+
+    .partidos {
+        margin-bottom: 20px;
+    }
+
+    .team-logo {
+        @include sizes(230px, 230px);
+    }
+
 }
 
 /*Modificando menú hamburguesa de Bootstrap*/

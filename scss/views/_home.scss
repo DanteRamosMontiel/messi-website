@@ -86,6 +86,9 @@
 }
 
 /*Carousel de Estadisticas*/
+.titulo-estadisticas {
+    padding-bottom: 60px; 
+}
 /*Patidos Jugados*/
 .carousel-container {
     @include flex-center;
