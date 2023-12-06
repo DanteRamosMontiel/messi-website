@@ -45,7 +45,7 @@
     @include flex-personalizated(end, end, null);
     background-size: cover;
     background-repeat: no-repeat;
-    animation: homeBannerAnimation 4s ease-in-out;
+    animation: BannerAnimation 4s ease-in-out;
 
     div {
         max-width: 33%;

@@ -1,3 +1,35 @@
+.banner-galeria{
+    @include sizes(100%, 100vh);
+    background-image: url(https://static.messi.com/wp-content/uploads/2023/07/HOME-MESSI.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex-personalizated(end, end, null);
+    animation: BannerAnimation 4s ease-in-out;
+    div {
+        max-width: 33%;
+        margin: 0px 100px 150px 0px;
+
+        img {
+            max-width: 100%;
+            animation: homeMessiTitleAnimation 3s ease-in-out
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            letter-spacing: 40px;
+            margin-bottom: 40px;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            animation: homeLionelAnimation 3s ease-in-out;
+        }
+    }
+}
+
+
+
+
+
 /*PESTAÑA GALLERY*/
 .grid-item {
     @include flex-center;

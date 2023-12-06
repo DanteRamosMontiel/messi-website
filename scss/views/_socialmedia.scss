@@ -1,18 +1,37 @@
 /*PESTAÑA SOCIAL MEDIA*/
-/*Modificando el titulo*/
-.titulo-redes {
-    @include flex-center;
-    margin-top: 140px;
-    h1 {
-        @include font-style(('Rubik', sans-serif), 70px, 900, center);
-        color: $white;
+/*Modificando el Banner*/
+.banner-social-media{
+    @include sizes(100%, 100vh);
+    background-image: url(https://static.messi.com/wp-content/uploads/2023/07/STATS-MESSI-INTER-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex-personalizated(start, end, null);
+    animation: BannerAnimation 4s ease-in-out;
+    div {
+        max-width: 33%;
+        margin: 0px 0px 150px 150px;
+
+        img {
+            max-width: 100%;
+            animation: homeMessiTitleAnimation 3s ease-in-out
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            letter-spacing: 40px;
+            margin-bottom: 40px;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            animation: homeLionelAnimation 3s ease-in-out;
+        }
     }
 }
 
 /*Modificando acordeones en rasgos generales*/
 .acordeones {
     @include flex-personalizated(center, center, column);
-    margin: 50px 0px;
+    padding: 100px 0px 50px 0px;
 }
 
 .accordion {

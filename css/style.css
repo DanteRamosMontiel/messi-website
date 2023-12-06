@@ -215,7 +215,7 @@ body::-webkit-scrollbar-thumb {
   align-items: end;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: homeBannerAnimation 4s ease-in-out;
+  animation: BannerAnimation 4s ease-in-out;
 }
 .home-banner div {
   max-width: 33%;
@@ -699,20 +699,35 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*PESTAÑA MERCHANDISING*/
-/*Modificando el titulo*/
-.titulo-tienda {
+/*Modificando el Banner*/
+.banner-merchandising {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://static.messi.com/wp-content/uploads/2023/06/MESSI-ARG-23-b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 140px;
-  margin-bottom: 50px;
+  justify-content: end;
+  align-items: end;
+  animation: BannerAnimation 4s ease-in-out;
 }
-.titulo-tienda h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: 70px;
-  font-weight: 900;
-  text-align: center;
-  color: white;
+.banner-merchandising div {
+  max-width: 33%;
+  margin: 0px 150px 150px 0px;
+}
+.banner-merchandising div img {
+  max-width: 100%;
+  animation: homeMessiTitleAnimation 3s ease-in-out;
+  filter: invert(1);
+}
+.banner-merchandising div h1 {
+  color: red;
+  font-size: 45px;
+  letter-spacing: 30px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  animation: homeLionelAnimation 3s ease-in-out;
 }
 
 /*Modificando la sección*/
@@ -720,7 +735,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin: 100px 0px 100px 0px;
 }
 
 /*Modificando las product-cards*/
@@ -841,7 +856,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 50%;
 }
 .banner-title h1 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 90px;
   color: #fff;
   font-weight: 900;
@@ -890,19 +905,34 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*PESTAÑA SOCIAL MEDIA*/
-/*Modificando el titulo*/
-.titulo-redes {
+/*Modificando el Banner*/
+.banner-social-media {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://static.messi.com/wp-content/uploads/2023/07/STATS-MESSI-INTER-scaled.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 140px;
+  justify-content: start;
+  align-items: end;
+  animation: BannerAnimation 4s ease-in-out;
 }
-.titulo-redes h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: 70px;
-  font-weight: 900;
-  text-align: center;
+.banner-social-media div {
+  max-width: 33%;
+  margin: 0px 0px 150px 150px;
+}
+.banner-social-media div img {
+  max-width: 100%;
+  animation: homeMessiTitleAnimation 3s ease-in-out;
+}
+.banner-social-media div h1 {
   color: white;
+  font-size: 50px;
+  letter-spacing: 40px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  animation: homeLionelAnimation 3s ease-in-out;
 }
 
 /*Modificando acordeones en rasgos generales*/
@@ -911,7 +941,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 50px 0px;
+  padding: 100px 0px 50px 0px;
 }
 
 .accordion {
@@ -1044,6 +1074,35 @@ body::-webkit-scrollbar-thumb {
   max-width: 100%;
 }
 
+.banner-galeria {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://static.messi.com/wp-content/uploads/2023/07/HOME-MESSI.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  animation: BannerAnimation 4s ease-in-out;
+}
+.banner-galeria div {
+  max-width: 33%;
+  margin: 0px 100px 150px 0px;
+}
+.banner-galeria div img {
+  max-width: 100%;
+  animation: homeMessiTitleAnimation 3s ease-in-out;
+}
+.banner-galeria div h1 {
+  color: white;
+  font-size: 50px;
+  letter-spacing: 40px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  animation: homeLionelAnimation 3s ease-in-out;
+}
+
 /*PESTAÑA GALLERY*/
 .grid-item {
   display: flex;
@@ -1145,6 +1204,14 @@ body::-webkit-scrollbar-thumb {
   .home-banner {
     background-position-x: 60%;
   }
+  .banner-merchandising {
+    background-position-x: 70%;
+  }
+  .banner-merchandising div h1 {
+    font-size: 35px;
+    letter-spacing: 20px;
+    margin-bottom: 10px;
+  }
   .partidos-miami {
     width: 35%;
     animation: none;
@@ -1197,6 +1264,31 @@ body::-webkit-scrollbar-thumb {
   }
   .home-banner div h1 {
     font-size: 40px;
+  }
+  .banner-social-media {
+    background-position-x: 70%;
+  }
+  .banner-social-media div h1 {
+    font-size: 40px;
+  }
+  .banner-merchandising {
+    background-position-x: 30%;
+  }
+  .banner-merchandising div {
+    margin: 0px 170px 100px 0px;
+  }
+  .banner-merchandising div h1 {
+    font-size: 25px;
+    letter-spacing: 20px;
+    margin-bottom: 10px;
+  }
+  .banner-galeria {
+    background-position-x: 40%;
+  }
+  .banner-galeria div h1 {
+    font-size: 40px;
+    letter-spacing: 30px;
+    margin-bottom: 20px;
   }
   .partidos-miami {
     width: 35%;
@@ -1278,6 +1370,44 @@ body::-webkit-scrollbar-thumb {
   .home-banner div h1 {
     font-size: 20px;
     letter-spacing: 30px;
+  }
+  .banner-social-media {
+    background-position-x: 70%;
+  }
+  .banner-social-media div {
+    margin: 0px 0px 100px 70px;
+  }
+  .banner-social-media div h1 {
+    font-size: 40px;
+    letter-spacing: 30px;
+  }
+  .banner-merchandising {
+    background-position-x: 30%;
+  }
+  .banner-merchandising div {
+    margin: 0px 250px 100px 0px;
+  }
+  .banner-merchandising div img {
+    max-width: 150%;
+  }
+  .banner-merchandising div h1 {
+    font-size: 25px;
+    letter-spacing: 14px;
+    margin-bottom: 10px;
+  }
+  .banner-galeria {
+    background-position-x: 40%;
+  }
+  .banner-galeria div {
+    margin: 0px 100px 100px 0px;
+  }
+  .banner-galeria div img {
+    max-width: 120%;
+  }
+  .banner-galeria div h1 {
+    font-size: 35px;
+    letter-spacing: 20px;
+    margin-bottom: 20px;
   }
   .partidos div {
     width: 55px;
@@ -1395,6 +1525,50 @@ body::-webkit-scrollbar-thumb {
   .home-banner div h1 {
     font-size: 20px;
     letter-spacing: 15px;
+  }
+  .banner-social-media {
+    background-position-x: 70%;
+  }
+  .banner-social-media div {
+    margin: 0px 0px 80px 40px;
+  }
+  .banner-social-media div img {
+    max-width: 150%;
+  }
+  .banner-social-media div h1 {
+    font-size: 20px;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+  }
+  .banner-merchandising {
+    background-position-x: 20%;
+    justify-content: start;
+  }
+  .banner-merchandising div {
+    margin: 0px 0px 80px 30px;
+  }
+  .banner-merchandising div img {
+    max-width: 180%;
+    filter: none;
+  }
+  .banner-merchandising div h1 {
+    font-size: 20px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+  }
+  .banner-galeria {
+    background-position-x: 40%;
+  }
+  .banner-galeria div {
+    margin: 0px 130px 60px 0px;
+  }
+  .banner-galeria div img {
+    max-width: 150%;
+  }
+  .banner-galeria div h1 {
+    font-size: 30px;
+    letter-spacing: 15px;
+    margin-bottom: 20px;
   }
   .instagram-titulo h2,
   .facebook-titulo h2,
@@ -1537,6 +1711,50 @@ body::-webkit-scrollbar-thumb {
   .home-banner div h1 {
     font-size: 20px;
     letter-spacing: 15px;
+  }
+  .banner-social-media {
+    background-position-x: 70%;
+  }
+  .banner-social-media div {
+    margin: 0px 0px 80px 40px;
+  }
+  .banner-social-media div img {
+    max-width: 150%;
+  }
+  .banner-social-media div h1 {
+    font-size: 20px;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+  }
+  .banner-merchandising {
+    background-position-x: 20%;
+    justify-content: start;
+  }
+  .banner-merchandising div {
+    margin: 0px 0px 80px 30px;
+  }
+  .banner-merchandising div img {
+    max-width: 180%;
+    filter: none;
+  }
+  .banner-merchandising div h1 {
+    font-size: 20px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+  }
+  .banner-galeria {
+    background-position-x: 40%;
+  }
+  .banner-galeria div {
+    margin: 0px 100px 60px 0px;
+  }
+  .banner-galeria div img {
+    max-width: 150%;
+  }
+  .banner-galeria div h1 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
   }
   .welcome h2 {
     font-size: 40px;
@@ -1685,6 +1903,50 @@ body::-webkit-scrollbar-thumb {
     font-size: 15px;
     letter-spacing: 15px;
   }
+  .banner-social-media {
+    background-position-x: 70%;
+  }
+  .banner-social-media div {
+    margin: 0px 0px 60px 30px;
+  }
+  .banner-social-media div img {
+    max-width: 150%;
+  }
+  .banner-social-media div h1 {
+    font-size: 20px;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+  }
+  .banner-merchandising {
+    background-position-x: 20%;
+    justify-content: start;
+  }
+  .banner-merchandising div {
+    margin: 0px 0px 80px 30px;
+  }
+  .banner-merchandising div img {
+    max-width: 180%;
+    filter: none;
+  }
+  .banner-merchandising div h1 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+  .banner-galeria {
+    background-position-x: 40%;
+  }
+  .banner-galeria div {
+    margin: 0px 100px 60px 0px;
+  }
+  .banner-galeria div img {
+    max-width: 150%;
+  }
+  .banner-galeria div h1 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+  }
   .welcome h2 {
     font-size: 35px;
   }
@@ -1824,7 +2086,7 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(0px);
   }
 }
-@keyframes homeBannerAnimation {
+@keyframes BannerAnimation {
   0% {
     transform: scale(1.1);
   }

@@ -1,12 +1,31 @@
 /*PESTAÑA MERCHANDISING*/
-/*Modificando el titulo*/
-.titulo-tienda {
-    @include flex-center;
-    margin-top: 140px;
-    margin-bottom: 50px;
-    h1 {
-        @include font-style(('Rubik', sans-serif), 70px, 900, center);
-        color: $white;
+/*Modificando el Banner*/
+.banner-merchandising{
+    @include sizes(100%, 100vh);
+    background-image: url(https://static.messi.com/wp-content/uploads/2023/06/MESSI-ARG-23-b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex-personalizated(end, end, null);
+    animation: BannerAnimation 4s ease-in-out;
+    div {
+        max-width: 33%;
+        margin: 0px 150px 150px 0px;
+
+        img {
+            max-width: 100%;
+            animation: homeMessiTitleAnimation 3s ease-in-out;
+            filter:invert(1)
+        }
+
+        h1 {
+            color: red;
+            font-size: 45px;
+            letter-spacing: 30px;
+            margin-bottom: 40px;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            animation: homeLionelAnimation 3s ease-in-out;
+        }
     }
 }
 
@@ -15,7 +34,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin: 100px 0px 100px 0px;
     
 }
 
