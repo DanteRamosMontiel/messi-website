@@ -722,7 +722,7 @@ body::-webkit-scrollbar-thumb {
 }
 .banner-merchandising div h1 {
   color: red;
-  font-size: 45px;
+  font-size: 42px;
   letter-spacing: 30px;
   margin-bottom: 40px;
   font-weight: 300;
@@ -1168,8 +1168,8 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   transition: transform 0.1s;
 }
-.submit-photo-button:active {
-  transform: scale(0.95);
+.submit-photo-button:hover {
+  background-color: black;
 }
 
 .form-control {
